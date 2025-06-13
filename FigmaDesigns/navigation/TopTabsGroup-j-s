@@ -1,0 +1,55 @@
+// import { View, Text, SafeAreaView, StyleSheet, StatusBar } from "react-native";
+// import { MainCard } from "../screens/MainCard";
+// import { SoftBlokedCards } from "../screens/SoftBlokedCards";
+// import { BlokedCards } from "../screens/BlokedCards";
+// import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+// import { CardOptionsStack } from "./CardOptionsStack-j-s";
+// import { DrawerGroup } from "./DrawerGroup.js";
+// import Drawer1 from "../screens/Drawer1";
+
+// const TopTabs = createMaterialTopTabNavigator();
+
+// const tabLabelStyle = (focused) => ({
+//   backgroundColor: focused ? "lightgray" : "transparent",
+//   color: "black",
+//   padding: 10,
+//   borderRadius: 10,
+// });
+
+// export function TopTabsGroup() {
+//   return (
+//     <TopTabs.Navigator
+//       screenOptions={{
+//         tabBarIndicatorStyle: { backgroundColor: "transparent" },
+//       }}
+//     >
+//       <TopTabs.Screen
+//         name="Active"
+//         component={MainCard}
+//         options={{
+//           tabBarLabel: ({ focused }) => (
+//             <Text style={tabLabelStyle(focused)}>Active</Text>
+//           ),
+//         }}
+//       />
+//       <TopTabs.Screen
+//         name="Soft blocked"
+//         component={SoftBlokedCards}
+//         options={{
+//           tabBarLabel: ({ focused }) => (
+//             <Text style={tabLabelStyle(focused)}>Soft blocked</Text>
+//           ),
+//         }}
+//       />
+//       <TopTabs.Screen
+//         name="Stopped"
+//         component={BlokedCards}
+//         options={{
+//           tabBarLabel: ({ focused }) => (
+//             <Text style={tabLabelStyle(focused)}>Stopped</Text>
+//           ),
+//         }}
+//       />
+//     </TopTabs.Navigator>
+//   );
+// }

@@ -1,0 +1,103 @@
+import { StyleSheet,Dimensions } from "react-native";
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#F6F6F4",
+    marginTop: 186,
+  },
+  container1: {
+    flext: 1,
+    flexDirection: "column",
+    // backgroundColor: "red",
+    height: 1217,
+    width: Dimensions.get("window").width,
+    // padding: 4,
+    marginTop: 20,
+  },
+  card: {
+    height: 88,
+    width: Dimensions.get("window").width - 32,
+    //  backgroundColor: "#FFFFFF",
+   // backgroundColor: "red",
+    marginBottom: 24,
+    marginHorizontal: 8,
+    paddingVertical: 16,
+    paddingHorizontal: 1,
+    borderRadius: 8,
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderColor:'#D1D2D6'
+  },
+  cardInfomationtext: {
+    height: 32,
+    width: Dimensions.get("window").width - 32,
+    paddingLeft: 16,
+    paddingBottom: 8,
+    fontWeight: "600",
+    fontSize: 12,
+    color: "#5B626F",
+    letterSpacing: 2,
+  },
+  cardSubInfo: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  cardSubInfoText: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginLeft: 8,
+    // backgroundColor: 'yellow',
+    width: 293.71,
+  },
+  cardName: {
+    alignItems: "center",
+    height: 48,
+    width: 390 - 32,
+    // backgroundColor: "red",
+    marginBottom: 24,
+  },
+  cardActionsBar: {
+    height: 98,
+    width: Dimensions.get("window").width - 32,
+    // backgroundColor: "lightblue",
+    marginBottom: 24,
+  },
+  cardInfomation: {
+    alignItems: "center",
+    height: 396,
+    width: Dimensions.get("window").width - 32,
+    marginBottom: 24,
+    // backgroundColor: "black",
+  },
+  cardSensetiveInfomation: {
+    height: 100,
+    width: Dimensions.get("window").width - 32 - 16,
+    //  backgroundColor: "yellow",
+    marginBottom: 24,
+  },
+  cardComponents: {
+    height: 396,
+    width: Dimensions.get("window").width - 32,
+    // backgroundColor: "red",
+  },
+  cardUsageComponents: {
+    height: 192,
+    width: Dimensions.get("window").width - 32 - 16,
+    // backgroundColor: "red",
+    marginBottom: 24,
+  },
+  cardstatus: {
+    height: 24,
+    //margin: 8,
+    width: 51,
+    padding: 4,
+    // backgroundColor: "#E6F9E7",
+  },
+  cardstatustext: {
+    color: "#306E33",
+    fontWeight: "500",
+    fontSize: 14,
+    lineHeight: 20,
+  },
+});

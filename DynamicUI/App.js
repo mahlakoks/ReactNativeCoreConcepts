@@ -14,6 +14,31 @@ import {
 import CustomButton from "./components/CustomButtons/CusttomButton";
 //React native will choose the OS automatically depending on device
 
+import {
+  NavigationContainer,
+  useNavigation,
+  DrawerActions,
+  useRoute,
+} from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import SimpleLineIcons from "@expo/vector-icons/SimpleLineIcons";
+
+import {CardOptionsStack} from "./navigations/CardOptionsStack";
+import { DrawerGroup } from "./navigations/DrawerGroup"
+import { TopTabsGroup } from "./navigations/TopTabsGroup";
+
+// export default function App() {
+//   return (
+//     <SafeAreaView style={Styles.safearea}>
+//       <StatusBar backgroundColor="red" hidde={false} />
+
+//       <NavigationContainer>
+//         {/* <TopTabsGroup/> */}
+//         {/* <DrawerGroup /> */}
+//         <CardOptionsStack/>
+//       </NavigationContainer>
+
 export default function App() {
   const colorScheme = useColorScheme();
   const platformName=Platform.OS

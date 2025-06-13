@@ -1,0 +1,54 @@
+// import { MainCard } from "../screens/MainCard";
+// import { CardPIN } from "../modals/CardPIN";
+import CardSettingsScreen from "../screens/CardSettingsScreen";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { DrawerGroup } from "./DrawerGroup.js";
+import { CardLimits } from "../modals/CardLimits";
+
+const CardOptions = createNativeStackNavigator();
+
+export function CardOptionsStack() {
+  return (
+    <CardOptions.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+        headerShown: true,
+        headerBackButtonDisplayMode: "minimal",
+        headerStyle: {
+          backgroundColor: "#FFFFFF",
+        },
+        headerBackVisible: true,
+      }}
+    >
+      <CardOptions.Screen
+        name="mainCard1"
+        component={DrawerGroup}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <CardOptions.Screen
+        name="Card Pin"
+        component={CardPIN}
+        options={{
+          title: "Card PIN",
+        }}
+      />
+      <CardOptions.Screen
+        name="Card Settings"
+        component={CardSettingsScreen}
+        options={{
+          title: "Card settings",
+        }}
+      />
+      <CardOptions.Screen
+        name="Card Limits"
+        component={CardLimits}
+        options={{
+          title: "Card limits",
+        }}
+      />
+      {/* <CardOptions.Screen name="Stack3" component={BlokedCards} /> */}
+    </CardOptions.Navigator>
+  );
+}
