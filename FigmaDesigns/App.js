@@ -5,8 +5,8 @@ import { SafeAreaView } from "react-native";
 export default function App() {
   return (
     <NavigationContainer>
-      {/* <StackGroup /> */}
-      <Drawernavi/>
+      <StackGroup />
+      {/* <Drawernavi/> */}
     </NavigationContainer>
 
   )

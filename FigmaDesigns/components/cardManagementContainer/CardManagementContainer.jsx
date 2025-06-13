@@ -10,14 +10,17 @@ export const CardManagementContainer = () => {
     {
       name: "Card PIN",
       icon: CardPin,
+      navigateToScreen:"Card PIN"
     },
     {
       name: "Soft block",
       icon: SoftBlockedCard,
+        navigateToScreen:"Soft block"
     },
     {
       name: "Stop card",
       icon: BlockedCard,
+      navigateToScreen:"Stop card"
     },
     // {
     //   name: "Card Pin",
@@ -36,6 +39,7 @@ export const CardManagementContainer = () => {
               key={item.name + index}
               name={item.name}
               CardIcon={item.icon}
+              navigateToScreen={item.navigateToScreen}
             />
           );
         })}

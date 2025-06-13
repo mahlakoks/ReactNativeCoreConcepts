@@ -31,11 +31,12 @@ export function StackGroup() {
         headerBackTitleVisible: true,
         headerShown: true
       }} />
-      <Stack.Screen name="Test1" component={BlokedCards}  options={{
+      <Stack.Screen name="Card PIN" component={BlokedCards}  options={{
         headerBackTitleVisible: true,
         headerShown: true
       }}/>
-      <Stack.Screen name="Test2" component={NavigationTestScreen2} />
+      <Stack.Screen name="Soft block" component={NavigationTestScreen2} />
+      <Stack.Screen name="Stop card" component={NavigationTestScreen2} />
     </Stack.Navigator>
   );
 }

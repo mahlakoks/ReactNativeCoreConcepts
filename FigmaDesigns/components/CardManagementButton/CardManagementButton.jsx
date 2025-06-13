@@ -4,14 +4,14 @@ import { Card } from "../../assets/InvestecIcons";
 import Styles from "./CardManagementButton.style";
 import { useNavigation } from "@react-navigation/native";
 
-export const CardManagementButton = ({ name = "Card PIN", CardIcon }) => {
+export const CardManagementButton = ({ name = "Card PIN", CardIcon,navigateToScreen}) => {
   const { container, subcontainer } = Styles();
   const navigator  = useNavigation();
-  console.log('??????Navigation >>>',  navigator )
+  console.log('??????Navigation >>>',  navigateToScreen )
   return (
     <View style={container}>
       <View style={subcontainer}>
-        <Pressable onPress={() => navigator.navigate("Test1")}>
+        <Pressable onPress={() => navigator.navigate(navigateToScreen)}>
           {CardIcon ? <CardIcon /> : <Card />}
         </Pressable>
       </View>
